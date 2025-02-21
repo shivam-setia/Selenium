@@ -16,11 +16,11 @@ public class LoginPage {
     }
 
     public void enterUserName(String uName) throws IOException {
-        driver.findElement(By.id(utils.fetchElementLocator("login_userName_id"))).sendKeys(uName);
+        driver.findElement(By.xpath(utils.fetchElementLocator("login_userName_id"))).sendKeys(uName);
     }
 
     public void enterPassword(String pswrd) throws IOException {
-        driver.findElement(By.id(utils.fetchElementLocator("login_password_id"))).sendKeys(pswrd);
+        driver.findElement(By.xpath(utils.fetchElementLocator("login_password_id"))).sendKeys(pswrd);
     }
 
     public void clickLoginButton(){

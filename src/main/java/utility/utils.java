@@ -11,7 +11,12 @@ public class utils {
         property.load(fis);
         return property.get(key);
     }
-
+    public static Object fetchurlfromProperty(String key) throws IOException {
+        FileInputStream fis = new FileInputStream("./Config/config.properties");
+        Properties property = new Properties();
+        property.load(fis);
+        return property.get(key);
+    }
     public static String fetchElementLocator(String key) throws IOException {
         FileInputStream fis = new FileInputStream("./Config/Elements.properties");
         Properties property = new Properties();
